@@ -1,4 +1,5 @@
 -nstruct 1 
+-out:path:all out
 -parser:protocol clean_repack.xml
 -extra_res_fa cid92930.params 
 -enzdes::cstfile cid92930.enzdes.cst 
