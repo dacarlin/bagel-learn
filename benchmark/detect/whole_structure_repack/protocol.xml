@@ -3,6 +3,7 @@
   <t weights=talaris2013_cst.wts/>
 </SCOREFXNS>
 <TASKOPERATIONS>
+  <DetectProteinLigandInterface name=repack_sphere design=0 />
 </TASKOPERATIONS>
 <FILTERS>
   <EnzScore name=allcst score_type=cstE scorefxn=t whole_pose=1 energy_cutoff=999999 />
@@ -11,7 +12,7 @@
   <AddOrRemoveMatchCsts name=cstadd cst_instruction=add_new accept_blocks_missing_header=1 fail_on_constraints_missing=0 />
   <PredesignPerturbMover name=predock />
   <EnzRepackMinimize name=cst_opt cst_opt=1 design=0 cycles=1 />
-  <EnzRepackMinimize name=repack_wbb repack_only=1 scorefxn_minimize=t scorefxn_repack=t minimize_bb=1 />
+  <EnzRepackMinimize name=repack_wbb repack_only=1 scorefxn_minimize=t scorefxn_repack=t minimize_bb=1 task_operations=repack_sphere />
   <ParsedProtocol name=iterate>
     <Add mover=predock/>
     <Add mover=cst_opt/>
