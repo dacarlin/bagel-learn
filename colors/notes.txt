@@ -1,0 +1,1 @@
+Color atomic representation of BglB structure by the effect on kinetic constants when changing those atoms into the atoms of the mutant residue 
