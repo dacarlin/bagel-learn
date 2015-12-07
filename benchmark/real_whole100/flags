@@ -1,4 +1,6 @@
 -nstruct 100
+-use_input_sc 1 
+-unbountrot input_pdbs/A192A.pdb
 -out:path:all out
 -parser:protocol protocol.xml
 -extra_res_fa cid92930.params 
