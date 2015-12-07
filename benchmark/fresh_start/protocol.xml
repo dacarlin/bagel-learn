@@ -3,7 +3,7 @@
   <tal weights=talaris2013_cst.wts/>
 </SCOREFXNS>
 <TASKOPERATIONS>
-<DetectProteinLigandInterface name=detect design=0 cut1=8.0 cut2=10.0 cut3=12.0 cut4=14.0 catres_interface=1 />
+  <DetectProteinLigandInterface name=detect design=0 cut1=8.0 cut2=10.0 cut3=12.0 cut4=14.0 catres_interface=1 />
 </TASKOPERATIONS>
 <FILTERS>
   <EnzScore name=allcst score_type=cstE scorefxn=tal whole_pose=1 energy_cutoff=9 />
