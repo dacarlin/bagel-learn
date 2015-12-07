@@ -1,7 +1,3 @@
--nstruct 100
--use_input_sc 1 
--unbountrot input_pdbs/A192A.pdb
--out:path:all out
 -parser:protocol protocol.xml
 -extra_res_fa cid92930.params 
 -enzdes::cstfile cid92930.enzdes.cst 
@@ -15,7 +11,7 @@
 -packing::no_optH false
 -packing::optH_MCA false
 -score::weights talaris2013_cst
--jd2::enzdes_out
+-nooutput 
 
 # reduce memory usage 
 -run::preserve_header
