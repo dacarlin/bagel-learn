@@ -3,4 +3,4 @@
 #$ -o logs
 #$ -e logs 
 
-~/rosetta/source/bin/rosetta_scripts.linuxgccrelease @ flags -s $( sed -n ${SGE_TASK_ID}p list.txt )
+~/rosetta/source/bin/rosetta_scripts.linuxgccrelease @ flags -s $( sed -n ${SGE_TASK_ID}p list.txt ) -out:database_protocol_id ${SGE_TASK_ID} 
